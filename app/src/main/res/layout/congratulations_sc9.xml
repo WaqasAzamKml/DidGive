@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <ImageView
+        android:id="@+id/ivlogo"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logoblue"
+         />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivlogo"
+        android:padding="10dp"
+        android:paddingBottom="5dp"
+        android:layout_marginTop="30dp">
+
+    <TextView
+        android:id="@+id/tvcongo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Congratulations!"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorblue"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/tvrequestpost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your request has been posted"
+        android:layout_centerHorizontal="true"
+        android:textColor="#434141"
+        android:layout_below="@id/tvcongo"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"/>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:text="GO TO HOME"
+            android:id="@+id/btngohome"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:background="@color/coloremail"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

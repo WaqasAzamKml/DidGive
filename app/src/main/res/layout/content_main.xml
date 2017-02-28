@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bghome"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.approsoft.didgive.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="fill_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+        <ImageView
+            android:id="@+id/crossstart"
+            android:padding="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cross"/>
+
+        <ImageView
+            android:padding="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/menu"/>
+
+        <ImageView
+             android:layout_width="match_parent"
+            android:paddingTop="40dp"
+            android:layout_height="match_parent"
+              android:id="@+id/ivicoon"
+             android:src="@drawable/logo"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SIGN UP"
+            android:textColor="#fff"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:layout_below="@id/ivicoon"
+            android:id="@+id/tvsignup"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Real joy comes from giving"
+            android:textColor="#fff"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/tvsignup"
+            android:id="@+id/tvrealjoy"/>
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_below="@+id/tvrealjoy"
+          android:paddingLeft="30dp"
+          android:paddingRight="30dp"
+          android:paddingTop="5dp"
+          android:paddingBottom="20dp">
+        <Button
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_width="fill_parent"
+            android:text="SIGN IN with FACEBOOK"
+            android:drawableRight="@drawable/facebook"
+            android:id="@+id/btnfb"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:background="@color/colorfb"
+            android:gravity="left|center_vertical"
+            android:layout_height="wrap_content" />
+
+
+        <Button
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_width="fill_parent"
+            android:text="SIGN IN with GOOGLE"
+            android:drawableRight="@drawable/google"
+            android:id="@+id/btngoogle"
+            android:layout_below="@id/btnfb"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:background="@color/colorgogl"
+            android:gravity="left|center_vertical"
+            android:layout_height="wrap_content" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:text="or use email"
+            android:id="@+id/oremail"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/btngoogle"
+            android:textColor="#fff"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content" />
+
+
+
+        <Button
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_width="fill_parent"
+            android:text="SIGN IN with EMAIL"
+            android:drawableRight="@drawable/email"
+            android:id="@+id/btnemail"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:background="@color/coloremail"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/oremail"
+            android:gravity="left|center_vertical"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/tvagree"
+            android:layout_below="@id/btnemail"
+            android:layout_marginTop="10dp"
+            android:textColor="#fff"
+            android:text="By Signing up  or Logging in, You agree to our Terms"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"/>
+
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="&amp; Conditions and Privacy Policy."
+              android:layout_below="@id/tvagree"
+              android:textColor="#fff"
+              android:layout_centerHorizontal="true"
+              />
+
+
+          </RelativeLayout>
+
+    </RelativeLayout>
+  </ScrollView>
+</RelativeLayout>

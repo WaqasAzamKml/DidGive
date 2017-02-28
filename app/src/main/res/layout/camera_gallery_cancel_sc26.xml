@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#434141">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp">
+        <Button
+            android:layout_width="170dp"
+            android:text="CAMERA"
+            android:id="@+id/btncamcap"
+            android:height="37dp"
+            android:textColor="#fff"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@color/coloremail"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_width="170dp"
+            android:text="GALLERY"
+            android:id="@+id/btngallcap"
+            android:height="37dp"
+            android:textColor="#fff"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@color/coloremail"
+            android:layout_below="@id/btncamcap"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_width="170dp"
+            android:text="CANCEL"
+            android:id="@+id/btncancelcap"
+            android:height="37dp"
+            android:textColor="#fff"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@color/coloremail"
+            android:layout_below="@id/btngallcap"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

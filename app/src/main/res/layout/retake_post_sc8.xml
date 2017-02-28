@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/ivlogo"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logoblue"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivlogo"
+        android:layout_marginTop="40dp"
+        android:padding="10dp"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:text="RETAKE"
+            android:id="@+id/btnretake"
+            android:textColor="#fff"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:background="@color/colorblue"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:text="POST"
+            android:id="@+id/btnpost"
+            android:textColor="#fff"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:background="@color/coloremail"
+            android:layout_below="@id/btnretake"
+            android:layout_height="wrap_content" />
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

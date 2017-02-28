@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/appbarover">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+
+
+        </android.support.v7.widget.Toolbar>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/appbarover"
+    android:layout_marginTop="20dp"
+    android:padding="20dp"
+
+    >
+    <EditText
+        android:background="@color/colorblue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="06390 New York, us"
+        android:padding="25dp"
+        android:drawableRight="@drawable/crossdul"
+        android:drawableLeft="@drawable/search"
+        android:drawablePadding="15dp"/>
+
+</RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:text="SET LOCATION"
+        android:id="@+id/btnsetloc"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:background="@color/coloremail"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

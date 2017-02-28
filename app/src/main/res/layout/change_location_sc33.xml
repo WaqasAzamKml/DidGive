@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/appbarover">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+        </android.support.v7.widget.Toolbar>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+
+    <ScrollView
+        android:layout_below="@id/appbarover"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+    <Button
+        android:paddingLeft="40dp"
+        android:paddingRight="35dp"
+        android:layout_width="match_parent"
+        android:text="CHANGE LOCATION"
+        android:drawableLeft="@drawable/map"
+        android:id="@+id/btnchngloc"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:background="@color/coloremail"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tvdisfilt"
+        android:background="@drawable/border"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="DISTANCE"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="#100f0f"
+        android:textStyle="bold"
+
+        android:padding="18dp"
+        android:layout_below="@+id/btnchngloc" />
+
+
+
+            <RelativeLayout
+                android:layout_below="@+id/tvdisfilt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/rl1mile"
+                >
+    <TextView
+        android:background="@drawable/border"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1 mile"
+        android:textColor="@color/colorgrey"
+        android:textSize="20dp"
+        android:padding="18dp"
+
+        />
+
+            <RadioButton
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorgrey"/>
+
+            </RelativeLayout>
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/rl1mile"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:id="@+id/rl5mile"
+
+
+    >
+
+    <TextView
+        android:textColor="@color/colorgrey"
+        android:background="@drawable/border"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="5 miles"
+        android:textSize="20dp"
+        android:padding="18dp"
+        />
+
+            <RadioButton
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorgrey"/>
+        </RelativeLayout>
+
+
+    <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl5mile"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/rl10mile"
+
+                >
+    <TextView
+        android:textColor="@color/colorgrey"
+        android:background="@drawable/border"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="10 miles"
+        android:textSize="20dp"
+        android:padding="18dp"
+        />
+
+            <RadioButton
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorgrey"/>
+        </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl10mile"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/rl10pmile"
+                >
+                    <TextView
+                        android:textColor="@color/colorgrey"
+        android:background="@drawable/border"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:text="10+ miles"
+        android:textSize="20dp"
+        android:padding="18dp"
+        />
+
+            <RadioButton
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorgrey"/>
+            </RelativeLayout>
+
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/rl10pmile"
+       android:layout_marginLeft="20dp"
+       android:layout_marginRight="20dp"
+       android:id="@+id/rlnomile"
+
+       >
+
+    <TextView
+        android:textColor="@color/colorgrey"
+        android:background="@drawable/border"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:text="No Setting"
+        android:textSize="20dp"
+        android:padding="18dp"
+
+        />
+
+            <RadioButton
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorgrey"/>
+
+   </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/llbtns"
+        android:layout_below="@id/rlnomile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20dp"
+        >
+
+        <Button
+            android:paddingLeft="20dp"
+            android:paddingRight="30dp"
+            android:drawableLeft="@drawable/reset"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:text="RESET"
+            android:id="@+id/btnresetfil"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:layout_marginRight="5dp"
+            android:background="@color/colorblue"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:paddingLeft="20dp"
+            android:paddingRight="30dp"
+            android:drawableLeft="@drawable/apply"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:text="APPLY"
+            android:id="@+id/btnapplyfil"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:background="@color/coloremail"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

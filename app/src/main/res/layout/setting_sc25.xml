@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/appbarover">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/tickarrow"
+                    android:layout_gravity="right"
+                    android:paddingRight="15dp"/>
+
+        </android.support.v7.widget.Toolbar>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/appbarover"
+    >
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+
+
+    <EditText
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@drawable/border"
+        android:id="@+id/etprofilename"
+        android:hint="David"
+        android:drawableLeft="@drawable/name"
+        android:drawablePadding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        />
+    <Button
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:text="Photo"
+        android:drawableLeft="@drawable/photo"
+        android:drawableRight="@drawable/nextarrow"
+        android:drawablePadding="10dp"
+        android:gravity="left|center_vertical"
+        android:id="@+id/btnphotosett"
+        android:layout_below="@id/etprofilename"
+        android:textColor="#504f4f"
+        android:textSize="20sp"
+        android:background="#f1f1f1"
+        android:textAllCaps="false"
+        android:layout_height="70dp"
+        />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/btnphotosett"
+            android:background="#d1d1d1"
+            />
+
+    <Button
+        android:layout_marginTop="2dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:text="Location"
+        android:drawableLeft="@drawable/location"
+        android:drawableRight="@drawable/nextarrow"
+        android:drawablePadding="8dp"
+        android:gravity="left|center_vertical"
+        android:id="@+id/btnlocationprofileset"
+        android:layout_below="@id/btnphotosett"
+        android:textColor="#504f4f"
+        android:textSize="20sp"
+        android:background="#f1f1f1"
+        android:textAllCaps="false"
+        android:layout_height="70dp"
+        />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/btnlocationprofileset"
+            android:background="#d1d1d1"
+            />
+
+    <Button
+        android:layout_marginTop="2dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:text="Password"
+        android:drawableLeft="@drawable/password"
+        android:drawableRight="@drawable/nextarrow"
+        android:drawablePadding="13dp"
+        android:gravity="left|center_vertical"
+        android:id="@+id/btnpasspset"
+        android:layout_below="@id/btnlocationprofileset"
+        android:textColor="#504f4f"
+        android:textSize="20sp"
+        android:background="#f1f1f1"
+        android:textAllCaps="false"
+        android:layout_height="70dp"
+        />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/btnpasspset"
+            android:background="#d1d1d1"
+            />
+
+    <Button
+        android:layout_marginTop="2dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:text="Notification"
+        android:drawableLeft="@drawable/notifications"
+        android:drawableRight="@drawable/nextarrow"
+        android:drawablePadding="10dp"
+        android:gravity="left|center_vertical"
+        android:id="@+id/btnnotifyprofset"
+        android:layout_below="@id/btnpasspset"
+        android:textColor="#504f4f"
+        android:textSize="20sp"
+        android:background="#f1f1f1"
+        android:textAllCaps="false"
+        android:layout_height="70dp"
+        />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/btnnotifyprofset"
+            android:background="#d1d1d1"
+            />
+
+    <Button
+        android:layout_marginTop="2dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:text="Log Out"
+        android:drawableLeft="@drawable/logout"
+        android:drawableRight="@drawable/nextarrow"
+        android:drawablePadding="10dp"
+        android:gravity="left|center_vertical"
+        android:id="@+id/btnlgoutprofset"
+        android:layout_below="@id/btnnotifyprofset"
+        android:textColor="#504f4f"
+        android:textSize="20sp"
+        android:background="#f1f1f1"
+        android:textAllCaps="false"
+        android:layout_height="70dp"
+        />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/btnlgoutprofset"
+            android:background="#d1d1d1"
+            />
+
+
+    </RelativeLayout>
+
+</ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:padding="10dp"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:text="ADD DETAILS"
+            android:id="@+id/btnadddetails"
+            android:height="37dp"
+            android:textColor="#fff"
+            android:layout_marginBottom="30dp"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:background="@color/colorblue"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="OR"
+                android:textColor="#616161"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_toLeftOf="@id/tvor"
+                android:background="#b7b5b5"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:layout_toRightOf="@id/tvor"
+                android:background="#b7b5b5"
+                />
+
+        </RelativeLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:text="POST"
+            android:id="@+id/btnpost"
+            android:textColor="#fff"
+            android:layout_marginTop="30dp"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:background="@color/coloremail"
+            android:layout_below="@id/btnadddetails"
+            android:layout_height="wrap_content" />
+
+
+
+    </RelativeLayout>
+</RelativeLayout>

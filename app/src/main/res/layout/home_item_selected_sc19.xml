@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/ivchatselect"
+                android:layout_marginTop="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:src="@drawable/logoblue"/>
+
+            <TextView
+                android:id="@+id/tvselect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ivchatselect"
+                android:layout_marginTop="15dp"
+                android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of"
+                android:layout_marginLeft="10dp"
+
+                />
+
+            <ImageView
+                android:id="@+id/ivperson"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/logoblue"
+                android:layout_below="@id/tvselect"
+                android:layout_centerHorizontal="true"/>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:text="CHAT WITH MARTIN"
+                android:id="@+id/btnchatfromselect"
+                android:height="37dp"
+                android:textColor="#fff"
+                android:layout_marginTop="15dp"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:background="@color/coloremail"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivperson"
+                android:layout_margin="10dp"
+                android:layout_centerHorizontal="true" />
+</RelativeLayout>

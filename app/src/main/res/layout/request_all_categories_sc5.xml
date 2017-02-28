@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/crossdul"
+                            android:padding="15dp"/>
+
+
+        <ImageView
+            android:id="@+id/ivdonatelogo"
+            android:paddingTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logoblue"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivdonatelogo"
+            android:padding="10dp">
+        <Button
+            android:layout_width="match_parent"
+            android:text="MAKE REQUEST"
+            android:id="@+id/btnmakereq"
+            android:textColor="#fff"
+            android:layout_marginTop="30dp"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:background="@color/coloremail"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:text="SEE ALL ITEMS"
+            android:id="@+id/btnseeallitems"
+            android:textColor="#fff"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:background="@color/coloremail"
+            android:layout_below="@id/btnmakereq"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:text="CATEGORIES"
+            android:id="@+id/btncategories"
+            android:textColor="#fff"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:background="@color/coloremail"
+            android:layout_below="@id/btnseeallitems"
+            android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+</RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

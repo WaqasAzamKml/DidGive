@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="60dp"
+    android:paddingRight="60dp"
+    android:paddingBottom="30dp">
+
+    <Button
+        android:layout_width="match_parent"
+        android:text="DONATE STUFF"
+        android:id="@+id/btndonatestuffallitems"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:paddingRight="30dp"
+        android:textStyle="bold"
+        android:background="@color/coloremail"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/camera"
+        />
+
+</RelativeLayout>
+
+    </RelativeLayout>

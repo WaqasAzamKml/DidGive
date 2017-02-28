@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:id="@+id/crossstart"
+                android:padding="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/crossdul"/>
+
+
+    <ImageView
+        android:paddingTop="40dp"
+        android:id="@+id/ivclicked"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/unkn"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_below="@id/ivclicked"
+        android:layout_width="170dp"
+        android:layout_centerHorizontal="true"
+        android:text="MORE INFO"
+        android:id="@+id/btnmoreinfo"
+        android:layout_marginTop="20dp"
+        android:textColor="#fff"
+        android:layout_marginBottom="20dp"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/colorblue"
+        android:layout_height="50dp"
+        />
+
+
+    <View
+        android:id="@+id/vcenter"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#c0c0c0"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/btnmoreinfo"
+        />
+
+   <RelativeLayout
+       android:id="@+id/rlcaption"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/vcenter"
+       android:layout_marginTop="15dp"
+       android:padding="10dp"
+       >
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/unkn"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="BMW 3251"
+        android:textStyle="bold"
+        android:textColor="#3b3b3b"
+        android:textSize="20dp"
+        />
+
+   </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:text="CHAT WITH DAVID"
+        android:id="@+id/btnchatwith"
+        android:textColor="#fff"
+        android:layout_margin="10dp"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:layout_below="@id/rlcaption"
+        android:background="@color/coloremail"
+        android:layout_height="wrap_content"
+        />
+</RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/crossdul"
+            android:padding="15dp"/>
+
+
+        <ImageView
+            android:id="@+id/ivdonatelogo"
+            android:paddingTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logoblue"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivdonatelogo"
+            android:padding="10dp"
+            android:paddingBottom="5dp">
+
+     <TextView
+         android:id="@+id/tvcaption"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Write a caption use captivating words"
+         android:layout_centerHorizontal="true"
+         android:textColor="#161616"
+         android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:background="@drawable/border"
+            android:id="@+id/etcaption"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@id/tvcaption"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tvcaption2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/etcaption"
+            android:layout_marginTop="15dp"
+            android:textColor="#161616"
+            android:text="Describe your need"
+
+            />
+
+        <EditText
+            android:background="@drawable/border"
+            android:id="@+id/etcaption2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/tvcaption2"
+            android:layout_marginTop="10dp"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:text="GET PICTURE"
+            android:id="@+id/btngetpic"
+            android:textColor="#fff"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:background="@color/coloremail"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etcaption2" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

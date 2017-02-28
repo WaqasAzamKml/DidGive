@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/appbarover">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="More Details"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:textSize="20dp"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <ScrollView
+        android:layout_below="@id/appbarover"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:text="DONATE STUFF"
+        android:id="@+id/btndonatmoredetails"
+        android:height="37dp"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:background="@color/coloremail"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:text="GET STUFF"
+        android:id="@+id/btngetmoredet"
+        android:layout_marginTop="10dp"
+        android:height="37dp"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:layout_below="@id/btndonatmoredetails"
+        android:background="@color/coloremail"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:text="CHAT"
+        android:id="@+id/btnchatmoredet"
+        android:layout_marginTop="10dp"
+        android:height="37dp"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:layout_below="@id/btngetmoredet"
+        android:background="@color/coloremail"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:text="NOTIFICATION"
+        android:id="@+id/btnnotify"
+        android:layout_marginTop="10dp"
+        android:height="37dp"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:layout_below="@id/btnchatmoredet"
+        android:background="@color/coloremail"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:text="CATEGORIES"
+        android:id="@+id/btncategomoredet"
+        android:layout_marginTop="10dp"
+        android:height="37dp"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:layout_below="@id/btnnotify"
+        android:background="@color/coloremail"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:text="MY PROFILE"
+        android:id="@+id/btnmyprofile"
+        android:layout_marginTop="10dp"
+        android:height="37dp"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:layout_below="@id/btncategomoredet"
+        android:background="@color/coloremail"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:text="INVITE FACEBOOK FRIENDS"
+        android:id="@+id/btninvite"
+        android:layout_marginTop="10dp"
+        android:height="37dp"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:layout_below="@id/btnmyprofile"
+        android:background="@color/coloremail"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:text="HELP"
+        android:id="@+id/btnhelp"
+        android:layout_marginTop="10dp"
+        android:height="37dp"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:layout_below="@id/btninvite"
+        android:background="@color/coloremail"
+        android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+    </ScrollView>
+</RelativeLayout>
