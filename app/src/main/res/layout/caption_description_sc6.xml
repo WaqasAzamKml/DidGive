@@ -46,11 +46,15 @@
 
         <EditText
             android:background="@drawable/border"
-            android:id="@+id/etcaption"
+            android:id="@+id/etCaption"
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:layout_below="@id/tvcaption"
             android:layout_marginTop="10dp"
+            android:gravity="top"
+            android:padding="7dp"
+            android:inputType="textMultiLine|textCapSentences"
+
             />
 
         <TextView
@@ -58,7 +62,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_below="@id/etcaption"
+            android:layout_below="@id/etCaption"
             android:layout_marginTop="15dp"
             android:textColor="#161616"
             android:text="Describe your need"
@@ -67,11 +71,14 @@
 
         <EditText
             android:background="@drawable/border"
-            android:id="@+id/etcaption2"
+            android:id="@+id/etDescription"
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:layout_below="@id/tvcaption2"
             android:layout_marginTop="10dp"
+            android:gravity="top"
+            android:padding="7dp"
+            android:inputType="textMultiLine|textCapSentences"
             />
 
         <Button
@@ -85,7 +92,7 @@
             android:textStyle="bold"
             android:background="@color/coloremail"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/etcaption2" />
+            android:layout_below="@+id/etDescription" />
 
         </RelativeLayout>
     </RelativeLayout>

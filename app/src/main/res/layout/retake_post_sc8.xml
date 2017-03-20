@@ -3,6 +3,7 @@
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="16dp"
     android:layout_height="match_parent">
 
 
@@ -10,15 +11,17 @@
         android:id="@+id/ivlogo"
         android:padding="10dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/logoblue"/>
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_height="280dp"
+       />
 
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/ivlogo"
-        android:layout_marginTop="40dp"
-        android:padding="10dp"
+        android:layout_marginTop="15dp"
+
         >
         <Button
             android:layout_width="match_parent"
@@ -35,7 +38,7 @@
         <Button
             android:layout_width="match_parent"
             android:text="POST"
-            android:id="@+id/btnpost"
+            android:id="@+id/btnPost"
             android:textColor="#fff"
             android:layout_marginTop="15dp"
             android:textSize="20sp"
