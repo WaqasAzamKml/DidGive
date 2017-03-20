@@ -111,13 +111,13 @@
                     android:layout_height="50dp" />
 
                 <EditText
-                    android:drawablePadding="15dp"
+                    android:drawablePadding="13dp"
                     android:id="@+id/etname"
                     android:layout_width="match_parent"
                     android:hint="Name"
                     android:drawableLeft="@drawable/name"
                     android:background="#fff"
-                    android:paddingLeft="15dp"
+                    android:paddingLeft="12dp"
                     android:textColor="#000"
                     android:inputType="text"
                     android:layout_below="@id/etpassword"

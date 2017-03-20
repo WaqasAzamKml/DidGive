@@ -1,6 +1,12 @@
 <resources>
     <string name="app_name">DidGive</string>
     <string name="action_settings">Settings</string>
-    <string name="icon_heart">&#xf004;</string>
+    <string name="facebook_app_id">970803359731213</string>
+
+    <string name="map_type_none">None</string>
+    <string name="map_type_normal">Normal</string>
+    <string name="map_type_terrain">Terrain</string>
+    <string name="map_type_satellite">Satellite</string>
+    <string name="map_type_hybrid">Hybrid</string>
 
 </resources>

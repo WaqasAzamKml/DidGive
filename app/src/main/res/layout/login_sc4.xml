@@ -89,7 +89,7 @@
                 android:layout_height="50dp" />
 
             <EditText
-                android:drawablePadding="15dp"
+                android:drawablePadding="17dp"
                 android:id="@+id/etpasswordlgin"
                 android:layout_width="match_parent"
                 android:hint="*****"

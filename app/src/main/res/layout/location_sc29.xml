@@ -6,7 +6,6 @@
     android:layout_height="match_parent">
 
 
-
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -27,23 +26,54 @@
 
     </android.support.design.widget.AppBarLayout>
 
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/appbarover"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:id="@+id/mapFragment" />
+
 <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_below="@id/appbarover"
     android:layout_marginTop="20dp"
-    android:padding="20dp"
-
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
     >
+
     <EditText
-        android:background="@color/colorblue"
+        android:id="@+id/etlocation"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:background="#fff"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="06390 New York, us"
-        android:padding="25dp"
-        android:drawableRight="@drawable/crossdul"
-        android:drawableLeft="@drawable/search"
-        android:drawablePadding="15dp"/>
+        android:paddingLeft="50dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingRight="40dp"
+        />
+
+    <ImageView
+        android:onClick="geoLocate"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/searchdull"
+        />
+    <ImageView
+        android:padding="10dp"
+        android:onClick="clearSearch"
+        android:id="@+id/crosssearch"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/crossdul"
+        android:layout_alignParentRight="true"/>
 
 </RelativeLayout>
 
@@ -60,5 +90,7 @@
         android:layout_alignParentBottom="true"
         android:layout_margin="20dp"
         android:layout_centerHorizontal="true" />
+
+
 
 </RelativeLayout>

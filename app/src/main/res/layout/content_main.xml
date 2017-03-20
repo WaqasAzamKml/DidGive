@@ -66,13 +66,28 @@
           android:paddingRight="30dp"
           android:paddingTop="5dp"
           android:paddingBottom="20dp">
-        <Button
+
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:id="@+id/llfb"
+              >
+              <com.facebook.login.widget.LoginButton
+                  android:layout_marginTop="15dp"
+                  android:id="@+id/btnfb"
+                  android:textSize="25dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:visibility="gone"
+                  />
+              <Button
+                  android:id="@+id/btncustomfb"
             android:paddingLeft="15dp"
             android:paddingRight="15dp"
             android:layout_width="fill_parent"
             android:text="SIGN IN with FACEBOOK"
             android:drawableRight="@drawable/facebook"
-            android:id="@+id/btnfb"
             android:layout_marginTop="10dp"
             android:textSize="20sp"
             android:textAllCaps="false"
@@ -82,23 +97,39 @@
             android:gravity="left|center_vertical"
             android:layout_height="wrap_content" />
 
+          </RelativeLayout>
 
-        <Button
-            android:paddingLeft="15dp"
-            android:paddingRight="15dp"
-            android:layout_width="fill_parent"
-            android:text="SIGN IN with GOOGLE"
-            android:drawableRight="@drawable/google"
-            android:id="@+id/btngoogle"
-            android:layout_below="@id/btnfb"
-            android:layout_marginTop="10dp"
-            android:textSize="20sp"
-            android:textAllCaps="false"
-            android:textColor="#fff"
-            android:textStyle="bold"
-            android:background="@color/colorgogl"
-            android:gravity="left|center_vertical"
-            android:layout_height="wrap_content" />
+          <RelativeLayout
+              android:id="@+id/layoutGoogleButton"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_below="@id/llfb"
+
+              >
+          <Button
+              android:paddingLeft="15dp"
+              android:paddingRight="15dp"
+              android:layout_width="fill_parent"
+              android:text="SIGN IN with GOOGLE"
+              android:drawableRight="@drawable/google"
+              android:id="@+id/btnGoogleSignIn"
+              android:layout_marginTop="10dp"
+              android:textSize="20sp"
+              android:textAllCaps="false"
+              android:textColor="#fff"
+              android:textStyle="bold"
+              android:background="@color/colorgogl"
+              android:gravity="left|center_vertical"
+              android:layout_height="wrap_content" />
+
+              <com.google.android.gms.common.SignInButton
+                  android:id="@+id/btngoogle"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="10dp"
+                  android:visibility="gone"
+                  />
+          </RelativeLayout>
 
         <TextView
 
@@ -106,7 +137,7 @@
             android:text="or use email"
             android:id="@+id/oremail"
             android:layout_centerHorizontal="true"
-            android:layout_below="@id/btngoogle"
+            android:layout_below="@id/layoutGoogleButton"
             android:textColor="#fff"
             android:layout_marginTop="10dp"
             android:layout_height="wrap_content" />
